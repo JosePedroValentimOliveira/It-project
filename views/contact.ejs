@@ -1,0 +1,67 @@
+<%- contentFor('title') %>
+<title>Contact</title>
+<%- contentFor('header')%>
+<div class="buttons">
+
+
+  <button class="a-button-negative" onclick="location.href='/'">Homepage</button>
+  <button class="a-button-negative" onclick="location.href='/locaties'">Locaties</button>
+  <button class="a-button-negative currentPage" onclick="location.href='/contact'">Contact</button>
+  <button class="a-button-negative" onclick="location.href='/favorieten'">Favorieten</button></div>
+
+<%- contentFor('main') %>
+<div id="bs">
+  <div id="contact">
+    <h1>Contact</h1>
+    <form id="emailForm" class="" action=""  method="POST">
+      <label class="a-input__label" for="voornaam">Voornaam:</label><br>
+      <input type="text" name="voornaam" id="voornaam" /><br>
+  
+  
+      <label class="a-input__label" for="familienaam">Familienaam:</label><br>
+      <input type="text" name="familienaam" id="familienaam" /><br>
+  
+      <label class="a-input__label" for="email">E-mail:</label><br>
+      <input type="email" name="email" id="email" /><br>
+  
+      <label class="a-input__label" for="opmerking">Uw Bericht:</label><br>
+      <textarea name="opmerking" id="opmerking"></textarea><br>
+      <button type="submit" value="send" class="a-button-official">
+  
+        Verstuur
+      </button>
+    </form>
+  </div>
+  <div id="diensthoofd">
+    <div id="cErfgoed">
+      <h2>Diensthoofd Erfgoed Antwerpen</h2>
+      <p>Joke Bungeneers</p>
+      <p>joke.bungeneers@provincieantwerpen.be</p>
+      <p>Tel: 03 240 64 17</p>
+    </div>
+    <div id="cCultuur">
+      <h2>Diensthoofd Cultuur Antwerpen</h2>
+      <p>(Naam)</p>
+      <p>(email@provincieantwerpen.be)</p>
+      <p>Tel: ())</p>
+    </div>
+    <ul class="m-button-list m-button-list--horizontal">
+      <li><a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"><span
+            class="fa fa-facebook"></span></a></li>
+      <li><a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"><span
+            class="fa fa-twitter"></span></a></li>
+      <li><a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"><span
+            class="fa fa-linkedin"></span></a></li>
+      <li><a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"><span
+            class="fa fa-instagram"></span></a></li>
+      <li><a href="#" class="a-button a-button--google has-icon" aria-label="Google+"><span
+            class="fa fa-google-plus"></span></a></li>
+    </ul>
+  </div>
+</div>
+
+
+<%- contentFor('css') %>
+<link rel="stylesheet" href="css/contact.css">
+<%- contentFor('scripts') %>
+<script src="./js/contact.js" defer></script>

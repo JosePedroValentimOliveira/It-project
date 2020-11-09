@@ -1,0 +1,45 @@
+label {
+    width: 100px;
+}
+
+header img, #profile{
+    display: inline-block;
+}
+
+#profile{
+    right: 2%;
+    top: 10%;
+    position: absolute;
+}
+
+#icon{
+    margin-left: 3px;
+}
+#form{
+    position: absolute;
+    left: 40%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    margin-top: 80px;
+}
+#form button {
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+@media screen and (max-width:1023px){
+    #form{
+        left: 30%;
+    }
+}
+@media screen and (max-width:654px){
+    #form{
+        left: 15%;
+        right: 15%;
+    }
+    #form button{
+        margin-left: 0px;
+    }
+}

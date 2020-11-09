@@ -1,0 +1,71 @@
+main {
+    grid-area: main;
+    /*margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%; */
+    
+    display: flex;
+    width:  100%;
+    padding: 20px 5%;
+}
+    #gemeentes{
+    grid-area: gemeentes;
+    margin-bottom: 5px;
+    }
+    #accordeons{grid-area: accordeons;}
+    #categorie{grid-area: categorie; ;}
+    .a-input__checkbox{width: 80%;}
+
+.panel{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-areas: 'gegevens favorieten';
+
+}
+
+.panel>div{
+    margin:10px;
+}
+.gegevens{
+    width: 100%;
+    
+    grid-area: gegevens;
+}
+#active{
+    border: 3px solid #0064b4;
+    border-radius: 8px;
+}
+.favoriet{
+    position: absolute;
+    top:0;
+    left: 200;
+    grid-area: favoriet;
+}
+label{
+    width: auto;
+}
+
+main{
+    height: 100%;
+}
+#locatie-pagina{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: 'gemeentes categorie accordeons';
+    width: 100%;
+}
+@media screen and (max-width:1023px){
+    #locatie-pagina{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas: 'gemeentes categorie accordeons';
+}
+}
+@media screen and (max-width:654px){
+    #locatie-pagina{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'gemeentes categorie'
+                         'accordeons accordeons';
+    }
+}

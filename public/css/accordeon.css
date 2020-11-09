@@ -1,0 +1,39 @@
+
+/* knoppen gestyled voor het openen en sluiten van de accordeon*/
+.acc{background-color: #eee;
+color:#444;
+cursor: pointer;
+padding :18px;
+width :80%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.4s;
+}
+
+/* als er over de knop wordt gehovered en geclicked dat het van kleur veranderd {}*/
+
+.active, .acc:hover{
+  background-color: #ccc;
+}
+
+/* tekstvak met alle informatie stylen, gaat hidden by default zijn */
+
+.panel{
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  width: 80%;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+.acc:after{
+  content: '\2795';
+  font-size: 13px;
+  color:#777;
+  float: right;
+  margin-left: 5px;
+}
+.active:after{
+  content:'\2796';
+}

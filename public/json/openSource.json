@@ -1,0 +1,87 @@
+[
+    {
+        "naam": "bcryptJs",
+        "version": "2.4.3",
+        "link": "https://www.npmjs.com/package/bcrypt"
+    },
+    {
+        "naam": "ejs",
+        "version": "3.0.1",
+        "link": "https://www.npmjs.com/package/ejs"
+    },
+    {
+        "naam": "express",
+        "version": "4.17.1",
+        "link": "https://www.npmjs.com/package/express"
+    },
+    {
+        "naam": "express-ejs-layouts",
+        "version": "2.5.0",
+        "link": "https://www.npmjs.com/package/express-ejs-layouts"
+    },
+    {
+        "naam": "express-flash",
+        "version": "0.0.2",
+        "link": "https://www.npmjs.com/package/express-flash"
+    },
+    {
+        "naam": "express-session",
+        "version": "1.17.1",
+        "link": "https://www.npmjs.com/package/express-session"
+    },
+    {
+        "naam": "Graphhopper",
+        "version": "0.13.0",
+        "link": "https://github.com/graphhopper/graphhopper/"
+    },
+    {
+        "naam": "leaflet",
+        "version": "1.6.0",
+        "link": "https://leafletjs.com/"
+    },
+    {
+        "naam": "mongoose",
+        "version": "5.9.14",
+        "link": "https://www.npmjs.com/package/mongoose"
+    },
+    {
+        "naam": "nodejs",
+        "version": "0.0.0",
+        "link": "https://nodejs.org"
+    },
+    {
+        "naam":  "nodemailer",
+        "version" : "6.4.6",
+        "link" : "https://nodemailer.com"
+    },
+    {
+        "naam":  "mailgun",
+        "version" : "2.0.0",
+        "link" : "https://www.npmjs.com/package/mailgun-js"
+    },
+    {
+        "naam": "passport",
+        "version": "0.4.1",
+        "link": "https://www.npmjs.com/package/passport"
+    },
+    {
+        "naam": "passport-local",
+        "version": "1.0.0",
+        "link": "https://www.npmjs.com/package/passport-local"
+    },
+    {
+        "naam": "icons",
+        "version": "0.0.0",
+        "link": "https://www.flaticon.com/authors/freepik"
+    },
+    {
+        "naam":"Geolocatie Antwerpen",
+        "version":"0.0.0",
+        "link":"https://portaal-stadantwerpen.opendata.arcgis.com/"
+    },
+    {
+        "naam":"Huisstijl stad Antwerpen",
+        "version":"0.0.0",
+        "link":"http://antwerpen.be/huisstijl/login/"
+    }
+]

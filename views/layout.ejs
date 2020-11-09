@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#cf0039">
+  <meta name="theme-color" content="#cf0039">
+  <meta charset="utf-8">
+
+  <%-title%>
+ 
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://cdn.antwerpen.be/core_branding_favicons/citizens/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://cdn.antwerpen.be/core_branding_favicons/citizens/favicon-16x16.png">
+  <link rel="manifest" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/site.webmanifest">
+  <link rel="mask-icon" href="https://cdn.antwerpen.be/core_branding_favicons/citizens/safari-pinned-tab.svg"
+    color="#cf0039">
+  <link href="https://cdn.antwerpen.be/core_branding_scss/3.0.3/main.min.css" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css" type="text/css">
+
+
+  <link rel="stylesheet" href="./css/style.css"> 
+  <%-css%>
+  
+  
+  <%-scripts%>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  
+
+  
+  </head>
+
+<body>
+  <header>
+    <img src="./images/logo antwerpen.jpg" alt="">
+    <div class="profile">
+      <button id="loginButton" class="a-button" onclick="location.href='/login'">
+        <span id="icon" class="fa fa-user"></span>
+        <div id="username">Aanmelden</div>
+      </button>
+      <button id="sources" class="a-button" onclick="location.href='/sources'">
+        
+        <div id="">Open Source </div>
+      </button>
+    </div>
+    <%-header%>
+  </header>
+  <main>
+    <%-main%>
+ 
+  </main>
+
+
+
+<footer class="o-footer">
+  <span class="o-footerlabel">© Groep S</span>
+  <a href="#" class="o-footerbutton a-button a-button--secondary has-icon">
+    <span class="fa fa-arrow-up"></span>
+  </a>
+</footer>
+</body>
+
+</html>

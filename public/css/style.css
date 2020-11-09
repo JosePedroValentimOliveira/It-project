@@ -1,0 +1,119 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.antwerpen.be/core_branding_scss/4.0.0/antwerpen.min.css");
+* {
+    font-family: 'Antwerpen Regular';
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header' 
+    'main main'
+    'footer footer';
+}
+
+header{grid-area: header;}
+main{grid-area: main;
+        
+     height: 600px ;
+     
+}
+footer{grid-area: footer;}
+header{
+    background-image: url("../images/achtergrond-foto.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-bottom: black,1px;
+    position: relative;
+}
+
+header .logo{
+    margin: 0px;
+    display: flex;
+    src: url('./images/logo antwerpen.jpg');
+    
+}
+
+header .buttons{
+    display: inline-flex;
+    position: absolute;
+    bottom: 0px;
+    left:150px;
+}
+
+header .buttons button{
+    margin-bottom:10px ;
+    margin-right: 20px;
+    margin-left:20px;
+    padding-right:10px;
+    padding-left:10px;
+    border-radius: 8px;
+}
+
+header .a-input{
+    display:flex;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    color:white;
+    padding: 10px;
+}
+#username, #loginIcon{
+    display: inline-block;
+    height: 100%;
+}
+#loginButton{
+    display: inline;
+}
+.currentPage{
+    border: 3px solid #0064b4;
+    border-radius: 8px;
+}
+
+label {
+    width: 100px;
+}
+
+header img, .profile{
+    display: inline-block;
+}
+
+.profile{
+    right: 2%;
+    top: 10%;
+    position: absolute;
+}
+
+#icon{
+    margin-left: 3px;
+}
+.o-footerlabel{
+    color: chocolate;
+    width: 98%;
+}
+@media screen and (max-width:1023px){
+
+}
+
+@media screen and (max-width:654px){
+    main{
+        font-size: 0.75rem;
+    }
+    header .logo{
+        display: flex;
+    }
+    header .buttons{
+        position:absolute;
+        bottom: 0px;
+        left: 15px; 
+    }
+    header .buttons button{
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 12px;
+        
+    }
+}
+

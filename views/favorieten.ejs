@@ -1,0 +1,29 @@
+<%- contentFor('title') %>
+<title>Favorieten</title>
+<%- contentFor('header') %>
+<div class="buttons">
+    <button class="a-button-negative" onclick="location.href='/'">Homepage</button>
+    <button class="a-button-negative" onclick="location.href='/locaties'">Locaties</button>
+    <button class="a-button-negative" onclick="location.href='/contact'">Contact</button>
+    <button class="a-button-negative currentPage" onclick="location.href='/favorieten'">Favorieten</button></div>
+
+<%- contentFor('main') %>
+<div>
+    <button id="loginButton" class="a-button" onclick="location.href='/logout'">
+      <span id="icon" class="fa fa-user"></span>
+      <div id="username">Uitloggen</div>
+    </button>
+  </div>
+<h1>Jouw Favorieten</h1>
+
+<button onclick="removeFavorites()" class="a-button a-button--transparent">Verwijder alle favorieten</button>
+<div id="favorieten" >
+ 
+</div>
+
+<%- contentFor('css') %>
+<link rel="stylesheet" href="./css/favorieten.css">
+<%- contentFor('scripts') %>
+
+<script > let user = <%-user-%>;</script>
+<script src="./js/favorieten.js" defer></script>

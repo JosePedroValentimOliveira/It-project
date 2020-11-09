@@ -1,0 +1,166 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdn.antwerpen.be/core_branding_scss/4.0.0/antwerpen.min.css");
+* {
+    font-family: 'Antwerpen Regular';
+}
+label {
+    width: 100px;
+}
+header img, #profile{
+    display: inline-block;
+}
+#profile{
+    right: 2%;
+    top: 10%;
+    position: absolute;
+}
+#icon{
+    margin-left: 3px;
+}
+#username, #loginIcon{
+    display: inline-block;
+    height: 100%;
+}
+#loginButton{
+    display: inline;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header' 
+    'main main main'
+    'footer footer footer';
+}
+header{
+    background-image: url("../images/achtergrond-foto.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-bottom: black,1px;
+    position: relative;
+}
+header .logo{
+    margin: 0px;
+    display: flex;
+    
+}
+header .buttons{
+    position: absolute;
+    bottom: 0px;
+    left:150px;
+}
+header .buttons button{
+    margin-bottom:10px ;
+    margin-right: 20px;
+    margin-left:20px;
+    padding-right:10px;
+    padding-left:10px;
+    border-radius: 8px;
+}
+main{
+    height: 100%;
+    padding-bottom: 20px;
+}
+#active{
+    border: 3px solid #0064b4;
+    border-radius: 8px;
+}
+input{
+    padding: 5px 15px;
+    margin: 8px 0;
+    background-color: #f8f8f8;
+}
+textarea{
+    height: 100px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+}
+#contact {
+    grid-area: contact;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    width: 30%;
+}
+#bs{
+    display: flex;
+    flex-direction: row;
+}
+
+#diensthoofd {
+    grid-area: diensthoofd;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+#cErfgoed {
+    grid-area: cErfgoed;
+    margin-bottom: 30px;
+}
+#cCultuur {
+    grid-area: cCultuur;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:1023px){
+    #bs{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 'contact diensthoofd';
+    }
+}
+@media screen and (max-width:654px){
+    main{
+        font-size: 0.75rem;
+        align-content: center;
+    }
+    
+header .logo{
+        display: flex;
+    }
+header .buttons{
+        position:absolute;
+        bottom: 0px;
+        left: 12px;
+        width: auto; 
+    }
+header .buttons button{
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 12px;
+        
+    }
+#contact {
+        font-size: 0.75rem;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        vertical-align: middle;
+    }
+#cErfgoed h2{
+        font-size: 1.2rem;
+    }
+#cCultuur h2{
+        font-size: 1.2rem;
+    }
+#cErfgoed p{
+        font-size: 0.80rem;
+    }
+#cCultuur p{
+        font-size: 0.80rem;
+    }
+    #bs{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 'contact'
+                             'diensthoofd';
+    }
+    #diensthoofd{
+    margin-left: 10px;
+    }
+    #bs button{
+        width:200px
+    }
+}

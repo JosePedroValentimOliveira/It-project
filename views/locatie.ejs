@@ -1,0 +1,118 @@
+<%- contentFor('title') %>
+<title>Locatie</title>
+<%- contentFor('header') %>
+<div class="buttons">
+
+
+  <button class="a-button-negative " onclick="location.href='/'">Homepage</button>
+  <button class="a-button-negative currentPage" onclick="location.href='/locaties'">Locaties</button>
+  <button class="a-button-negative" onclick="location.href='/contact'">Contact</button>
+  <button class="a-button-negative" onclick="location.href='/favorieten'">Favorieten</button></div>
+
+<%- contentFor('main') %>
+<!--RadioButtons voor filters-->
+<div id="locatie-pagina">
+  <div id="gemeentes" class="a-input">
+    <label class="a-input__label">Gemeentes</label>
+    <div class="a-input__checkbox">
+      <input type="radio" id="alles" name="gemeente" onclick="checkFilter()">
+      <label for="alles">Alle gemeentes</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="antwerpen" name="gemeente" onclick="checkFilter()">
+      <label for="antwerpen">Antwerpen</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="berchem" name="gemeente" onclick="checkFilter()">
+      <label for="berchem">Berchem</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="bezali" name="gemeente" onclick="checkFilter()">
+      <label for="bezali">Berendrecht-Zandvliet-Lillo</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="borgerhout" name="gemeente" onclick="checkFilter()">
+      <label for="borgerhout">Borgerhout</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="deurne" name="gemeente" onclick="checkFilter()">
+      <label for="deurne">Deurne</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="ekeren" name="gemeente" onclick="checkFilter()">
+      <label for="ekeren">Ekeren</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="hoboken" name="gemeente" onclick="checkFilter()">
+      <label for="hoboken">Hoboken</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="merksem" name="gemeente" onclick="checkFilter()">
+      <label for="merksem">Merksem</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="wilrijk" name="gemeente" onclick="checkFilter()">
+      <label for="wilrijk">Wilrijk</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="edegem" name="gemeente" onclick="checkFilter()">
+      <label for="edegem">Edegem</label>
+    </div>
+
+  </div>
+  <div id="categorie" class="a-input">
+    <label class="a-input__label">Categorie</label>
+
+    <div class="a-input__checkbox">
+      <input type="radio" id="bibliotheek" name="categorie" onclick="checkFilter()">
+      <label for="bibliotheek">Bibliotheek</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="cultuurcentrum" name="categorie" onclick="checkFilter()">
+      <label for="cultuurcentrum">Cultuurcentrum</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="archief" name="categorie" onclick="checkFilter()">
+      <label for="archief">Archief</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="erfgoedbibliotheek" name="categorie" onclick="checkFilter()">
+      <label for="erfgoedbibliotheek">Erfgoedbibliotheek</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="museum" name="categorie" onclick="checkFilter()">
+      <label for="museum">Museum</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="erfgoedvereniging" name="categorie" onclick="checkFilter()">
+      <label for="erfgoedvereniging">Erfgoedvereniging</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="documentatiecentrum" name="categorie" onclick="checkFilter()">
+      <label for="documentatiecentrum">Documentatiecentrum</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="levensbeschouwelijkErfgoed" name="categorie" onclick="checkFilter()">
+      <label for="levensbeschouwelijkErfgoed">Levensbeschouwelijk Erfgoed</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="museumdepot" name="categorie" onclick="checkFilter()">
+      <label for="museumdepot">Museumdepot</label>
+    </div>
+    <div class="a-input__checkbox">
+      <input type="radio" id="geen" name="categorie" onclick="checkFilter()">
+      <label for="geen">Geen</label>
+    </div>
+
+  </div>
+
+  <div id="accordeons"></div>
+</div>
+
+<%- contentFor('css') %>
+
+<link rel="stylesheet" href="./css/locaties.css">
+<link rel="stylesheet" href="./css/accordeon.css">
+<%- contentFor('scripts') %>
+<script src="js/filters.js" defer></script>
+

@@ -1,0 +1,45 @@
+<%- contentFor('title') %>
+<title>Inloggen</title>
+<%- contentFor('main') %>
+<div id="form">
+  <h1>Login</h1>
+  <%- include('./partials/messages.ejs'); %>
+  <form action="/login" method="POST">
+
+    <div>
+      <label class="a-input__label a-input__label--inline-block" for="email">E-mail</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email"
+        value="<%=typeof email != 'undefined' ? email : ''%>">
+    </div>
+    <div>
+      <label class="a-input__label a-input__label--inline-block" for="password">Wachtwoord</label>
+      <input type="password" name="password" id="password" placeholder="Enter Password"
+        value="<%=typeof email != 'undefined' ? password : ''%>">
+    </div>
+
+    <button type="submit" class="a-button has-icon-right">
+      <span class="fa fa-arrow-right"></span>
+      Login
+    </button><br>
+
+  </form>
+
+  <p>Nog geen account? <a href="/register">Registreer</a></p>
+
+
+
+</div>
+
+<%- contentFor('header') %>
+<div class="buttons">
+  <button class="a-button-negative" onclick="location.href='/'">Homepage</button>
+  <button class="a-button-negative" onclick="location.href='/locaties'">Locaties</button>
+  <button class="a-button-negative" onclick="location.href='/contact'">Contact</button>
+  <button class="a-button-negative" onclick="location.href='/favorieten'">Favorieten</button></div>
+<%- contentFor('css') %>
+
+
+<link rel="stylesheet" href="./css/form.css">
+  
+<%- contentFor('scripts') %>
+

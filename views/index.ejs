@@ -1,0 +1,49 @@
+<%- contentFor('title') %>
+<title>Map erfgoed en cultuur locaties</title>
+<%- contentFor('main')%>
+<div id="mapEnInfo">
+  <div id="mapid">
+  </div>
+
+ 
+  <%- contentFor('header')%>
+  <div class="buttons">
+
+
+    <button class="a-button-negative currentPage" onclick="location.href='/'">Homepage</button>
+    <button class="a-button-negative" onclick="location.href='/locaties'">Locaties</button>
+    <button class="a-button-negative" onclick="location.href='/contact'">Contact</button>
+    <button class="a-button-negative" onclick="location.href='/favorieten'">Favorieten</button></div>
+
+  <div class="a-input">
+    <div class="a-switch">
+      <label id="erfgoedLabel" class="a-switch__label" for="knop">Erfgoed</label>
+      <div class="a-switch__toggle" >
+        <input type="checkbox" name="switch1" id="switch1" role="switch" aria-checked="false" onclick="checkMap()">
+        <label for="switch1"><span class="u-screen-reader-only">Toggle switch</span></label>
+      </div>
+      <label id="cultuurLabel" class="a-switch__label">Cultuur</label>
+      
+    </div>
+  </div>
+
+
+  <%- contentFor('scripts')%>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <script src="./js/leaflet-routing-machine.js"></script>
+  <script src="./js/lrm-graphhopper.js"></script>
+
+<script src="./js/map.js"defer > </script>
+  
+
+  <%- contentFor('css') %>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <link rel="stylesheet" href="./css/leaflet-routing-machine.css">
+  <link rel="stylesheet" href="./css/map.css">
+  
